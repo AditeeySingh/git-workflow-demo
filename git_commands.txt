@@ -104,7 +104,11 @@ does the same but keeps the changes staged.)
 
 STEP 5: GITHUB INTEGRATION
 --------------------------------------------------------------------
-git remote add origin https://github.com/<username>/git-workflow-demo.git
+gh repo create git-workflow-demo --public
+    (GitHub CLI) Creates an empty public repository named
+    git-workflow-demo on my GitHub account, only after all local work.
+
+git remote add origin https://github.com/AditeeySingh/git-workflow-demo.git
     Links the local repository to the empty public GitHub repository
     under the name "origin".
 
